@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development & Design Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Web Development & Design Hub</h1>
+        <p>Your Journey to Web Mastery Starts Here</p>
+    </header>
+
+    <main>
+        <section class="features">
+            <h2>What We Offer</h2>
+            <div class="feature">
+                <h3>Master HTML & CSS</h3>
+                <p>Learn the fundamentals of web development. 
+				Build beautiful websites from scratch and create a strong foundation.</p>
+            </div>
+            <div class="feature">
+                <h3>Create Responsive Layouts</h3>
+                <p>Design stunning, responsive web layouts that adapt to any device. 
+				Your websites will captivate audiences everywhere.</p>
+            </div>
+            <div class="feature">
+                <h3>Unleash Your Creativity</h3>
+                <p>Turn your ideas into interactive web experiences with JavaScript and cutting-edge technologies. 
+				Express your creativity.</p>
+            </div>
+        </section>
+
+        <section class="subscribe">
+            <h2>Stay Informed</h2>
+            <p>Subscribe to our newsletter to receive the latest web development and design tips, tutorials, 
+			and updates. Join our community of digital creators.</p>
+            <form id="subscription-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <button type="button" id="subscribe-button">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Web Development & Design Hub | <a href="privacy-policy.html">Privacy Policy</a></p>
+    </footer>
+
+    <script>
+        // Client-side JavaScript to handle the subscription form
+        document.getElementById("subscribe-button").addEventListener("click", function () {
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+
+            if (name && email) {
+                alert(`Thank you, ${name}! You are now subscribed with the email: ${email}`);
+            } else {
+                alert("Please fill in your name and email to subscribe.");
+            }
+        });
+    </script>
+</body>
+</html>
